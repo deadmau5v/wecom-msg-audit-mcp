@@ -1,0 +1,16 @@
+{
+  "$schema": "https://gofastmcp.com/public/schemas/fastmcp.json/v1.json",
+  "source": {
+    "path": "mcp_server.py",
+    "entrypoint": "mcp"
+  },
+  "environment": {
+    "dependencies": [
+      "boto3>=1.37.0",
+      "fastmcp>=2.10.0",
+      "pycryptodome>=3.23.0",
+      "python-dotenv>=1.0.0",
+      "requests>=2.31.0"
+    ]
+  }
+}

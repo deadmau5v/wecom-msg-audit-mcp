@@ -1,0 +1,73 @@
+# ============================================
+# 敏感信息（绝对不要提交）
+# ============================================
+.env
+.env.local
+.env.*.local
+private_key.pem
+*.pem
+*.key
+
+# ============================================
+# 运行时生成的数据（包含真实聊天记录）
+# ============================================
+wecom_messages.jsonl
+wecom_msg_seq.txt
+external_groups.jsonl
+internal_groups.jsonl
+external_group_messages.jsonl
+internal_group_messages.jsonl
+media_*
+downloads/
+wecom/
+
+# ============================================
+# 二进制 SDK（请自行从企业微信开放平台下载）
+# ============================================
+libWeWorkFinanceSdk_C.so
+libWeWorkFinanceSdk_C.dylib
+libWeWorkFinanceSdk_C.dll
+*.so
+*.dylib
+*.dll
+
+# ============================================
+# Python
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.python-version
+
+# ============================================
+# IDE / 编辑器
+# ============================================
+.cursor/
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ============================================
+# 日志 / 临时文件
+# ============================================
+*.log
+*.tmp
+*.bak
+*.pid
+.cache/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/

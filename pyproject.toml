@@ -1,0 +1,46 @@
+[project]
+name = "wecom-msg-audit-mcp"
+version = "0.1.0"
+description = "企业微信会话内容存档 MCP 服务：拉取、解密并查询聊天记录"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "wecom-msg-audit-mcp contributors" },
+]
+keywords = [
+    "wecom",
+    "wechat-work",
+    "msg-audit",
+    "mcp",
+    "fastmcp",
+    "chat-archive",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business",
+    "Topic :: Communications",
+]
+requires-python = ">=3.11"
+dependencies = [
+    "boto3>=1.37.0",
+    "fastmcp>=2.10.0",
+    "pycryptodome>=3.23.0",
+    "python-dotenv>=1.0.0",
+    "requests>=2.31.0",
+]
+
+[project.scripts]
+wecom-msg-audit-mcp = "mcp_server:run_server"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
