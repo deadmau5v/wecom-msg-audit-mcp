@@ -47,15 +47,17 @@
 
 ### 1. 前置条件
 
+> 拉取会话内容需要先在企业微信管理后台（[work.weixin.qq.com](https://work.weixin.qq.com/wework_admin/loginpage_wx)）开启会话存档功能。开启方式和 API 参数说明见[企业微信开发者文档](https://developer.work.weixin.qq.com/document/path/91774)。
+
 - **Python 3.11+**
-- **企业微信会话内容存档权限**：管理后台 → 安全与管理 → 管理工具 → 会话内容存档
+- **企业微信会话内容存档权限**：登录 [管理后台](https://work.weixin.qq.com/wework_admin/loginpage_wx) → 安全与管理 → 管理工具 → 会话内容存档
 - **企业微信官方 SDK**：[libWeWorkFinanceSdk_C.so](https://developer.work.weixin.qq.com/document/path/97131)（需自行从开放平台下载）
 - **RSA 私钥**：在管理后台生成公钥并下载对应私钥
 
 ### 2. 安装
 
 ```bash
-git clone https://github.com/<your-org>/wecom-msg-audit-mcp.git
+git clone https://github.com/deadmau5v/wecom-msg-audit-mcp.git
 cd wecom-msg-audit-mcp
 
 # 推荐使用 uv
