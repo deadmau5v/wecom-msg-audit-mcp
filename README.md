@@ -51,7 +51,7 @@
 
 - **Python 3.11+**
 - **企业微信会话内容存档权限**：登录 [管理后台](https://work.weixin.qq.com/wework_admin/loginpage_wx) → 安全与管理 → 管理工具 → 会话内容存档
-- **企业微信官方 SDK**：[libWeWorkFinanceSdk_C.so](https://developer.work.weixin.qq.com/document/path/97131)（需自行从开放平台下载）
+- **企业微信官方 SDK**：[libWeWorkFinanceSdk_C.so](https://developer.work.weixin.qq.com/document/path/91774)（需自行从开放平台下载）
 - **RSA 私钥**：在管理后台生成公钥并下载对应私钥
 
 ### 2. 安装
