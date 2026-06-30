@@ -52,7 +52,15 @@
 - **Python 3.11+**
 - **企业微信会话内容存档权限**：登录 [管理后台](https://work.weixin.qq.com/wework_admin/loginpage_wx) → 安全与管理 → 管理工具 → 会话内容存档
 - **企业微信官方 SDK**：[libWeWorkFinanceSdk_C.so](https://developer.work.weixin.qq.com/document/path/91774)（需自行从开放平台下载）
-- **RSA 私钥**：在管理后台生成公钥并下载对应私钥
+- **RSA 私钥**：在管理后台「会话内容存档」页面上传公钥，私钥用 `openssl` 在本地生成（**不要使用任何在线生成工具**，避免私钥外泄）：
+
+  ```bash
+  # 生成 2048 位 RSA 私钥（兼容企业微信会话存档）
+  openssl genrsa -out private_key.pem 2048
+
+  # 提取对应公钥，上传到管理后台
+  openssl rsa -in private_key.pem -pubout -out public_key.pem
+  ```
 
 ### 2. 安装
 
